@@ -10,8 +10,18 @@
     sur un intervale [a,b] le pseudo code de cette fonction
     est disponible sur le ReadMe du dépot  
 """
-def res_equa_dct(f,a,b):
-    return 0
+
+def res_equa_dct(f,a,b,err):    
+    debut=a
+    fin=b
+    while ( fin-debut > err ):
+        millieu=(debut+fin)/2
+        if ( f(millieu) > 0):
+            fin=millieu
+        else:
+            debut=millieu
+
+    return millieu
 
 
 

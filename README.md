@@ -22,6 +22,7 @@ parametres à passer :
 # Méthode Dichotomie 
 
 Début
+
 debut <- a
 fin   <- b
 
@@ -39,4 +40,7 @@ TantQue ( fin-debut > err )
     }
 }
 retourner (millieu) 
+
+Fin
 ```
+

@@ -3,10 +3,10 @@
 # Méthode de Dichotomie
 
 les fonctions en relation avec cette méthode se trouvent dans le fichier 
-`dichotomie.py` et des tests sont disponibles sur `main.py` 
+**`dichotomie.py`** et des tests sont disponibles sur **`main.py`** 
 pour pouvoir lancer un test ( pour l'instant les fonctions pour tester cette méthode
-déjà fournies ) il faut donc lancer la commande : 
->python3 main.py
+déjà fournies  dans le fichier **`tests.py`**  ) il faut donc lancer la commande : 
+>**python3 main.py**
 
 **res_equa_dct (f , a , b , err) :**
 -
@@ -22,7 +22,6 @@ parametres à passer :
 # Méthode Dichotomie 
 
 Début
-
 debut <- a
 fin   <- b
 
@@ -40,7 +39,6 @@ TantQue ( fin-debut > err )
     }
 }
 retourner (millieu) 
-
 Fin
 ```
 

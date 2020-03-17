@@ -19,6 +19,6 @@ def test(f,f_str,interval,err):
     sol=dct.res_equa_dct(f,interval[0],interval[1],err)
     print(f" Solution approchée de f1(x) = 0 est : {sol}\n")
 
-def test1():
+def test0():
     tst_dico=Tests_Dico()
     test(tst_dico.f1,tst_dico.affiche_f1(),[0,1],10**-8)

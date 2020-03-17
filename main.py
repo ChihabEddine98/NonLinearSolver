@@ -7,7 +7,8 @@ from test_newton import *
 if __name__ == '__main__':
     # Tests Méthode Dichotomie :
     test0()
-
+    test4()
+    test5()
 
 
     #Tests Methode Newton :

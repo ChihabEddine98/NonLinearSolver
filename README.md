@@ -1,9 +1,9 @@
 # Non Linear Equations
 ## Méthode de Newton
  Tout d'abord,il faut installer la bibliotheque [sympy](https://www.sympy.org/en/index.html "sympy doc") qu'on utilisera plus tard.
- Les fonctions en relation avec cette méthode se trouvent dans le fichier [newton.py](newton.py) et les tests unitaires se font directement dans le main de ce même fichier.
+ Les fonctions en relation avec cette méthode se trouvent dans le fichier [newton.py](newton.py) et les tests unitaires se font dans le fichier [test_newton.py](test_newton.py).
  Il faut donc,pour tester, lancer la commande:
- > **python3 newton.py**
+ > **python3 test_newton.py**
  
  Nous avons implémentés deux versions différentes de cette méthode:
  * **res_equa_newton(f,Df,x0,epsilon,max_iter)**:

@@ -16,7 +16,7 @@ def res_equa_dct(f,a,b,err):
     fin=b
     while ( fin-debut > err ):
         millieu=(debut+fin)/2
-        if ( f(millieu) > 0):
+        if ( f(debut)*f(millieu) < 0):
             fin=millieu
         else:
             debut=millieu

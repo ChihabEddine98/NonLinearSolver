@@ -8,7 +8,7 @@ def affiche_infos(n,xn,fxn):
     print("tol : ",abs(fxn-0),"\n")
 
 
-
+# f continue sur un intervalle
 def res_equa_newton(f,Df,x0,epsilon,max_iter):
     fx=lambda x: eval(str(f))
     dfx=lambda x: eval(str(Df))

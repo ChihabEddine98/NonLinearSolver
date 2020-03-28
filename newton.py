@@ -9,7 +9,7 @@ def affiche_infos(n,xn,fxn):
 
 
 # f continue sur un intervalle
-def res_equa_newton(f,Df,x0,epsilon,max_iter):
+def res_equa_newton(f,Df,x0,epsilon=1e-10,max_iter=10):
     fx=lambda x: eval(str(f))
     dfx=lambda x: eval(str(Df))
     print("\n\nfunction f : ",f,"\n","Derivative f' : ",Df,"\n","--------------------------------")

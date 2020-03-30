@@ -19,29 +19,46 @@ class Tester:
     def test(self):
 
         print('--------------- Test des méthodes --------------------\n')
-        print("-----------------------------------")
-        print("|        Méthode Dichotomie        |")
-        print("-----------------------------------")
 
-        dichotomie.test(dichotomie())
+        print('------------- Test 01 ------------------')
+        dichotomie.test1(dichotomie())
+        newton.test1(newton())
+        cordes.test1(cordes())
+        falsePos.test1(falsePos())
 
-        print("-----------------------------------")
-        print("|        Méthode Newton            |")
-        print("-----------------------------------\n\n", )
+        print('------------- Test 02 ------------------')
+        dichotomie.test2(dichotomie())
+        newton.test2(newton())
+        cordes.test2(cordes())
+        falsePos.test2(falsePos())
 
-        newton.test(newton())
+        print('------------- Test 03 ------------------')
+        dichotomie.test3(dichotomie())
+        newton.test3(newton())
+        cordes.test3(cordes())
+        falsePos.test3(falsePos())
 
-        print("-----------------------------------")
-        print("|        Méthode Cordes            |")
-        print("-----------------------------------\n\n", )
+        print('------------- Test 04 ------------------')
+        dichotomie.test4(dichotomie())
+        newton.test4(newton())
+        cordes.test4(cordes())
+        falsePos.test4(falsePos())
 
-        cordes.test(cordes())
+        print('------------- Test 05 ------------------')
+        dichotomie.test5(dichotomie())
+        newton.test5(newton())
+        cordes.test5(cordes())
+        falsePos.test5(falsePos())
 
-        print("-----------------------------------")
-        print("|        Méthode Fausse position   |")
-        print("-----------------------------------\n\n", )
 
-        falsePos.test(falsePos())
+
+
+        print('----- NB : méthode Newton --------')
+        print("\n \n on remarque que la puissance de l'erreur double à chaque itération,donc la méthode est d'ordre 2,\n La convergence est quadratique.")
+
+
+
+
 
 
 

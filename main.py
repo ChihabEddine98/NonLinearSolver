@@ -10,6 +10,6 @@ if __name__ == '__main__':
 
     # Tests Des méthodes :
 
-    tester=Tester()
-    tester.test()
+    #tester=Tester()
+    #tester.test()
     

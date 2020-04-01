@@ -8,7 +8,7 @@ class FalsePosition(Equa_Solver):
         f=self.f
         a,b=self.a,self.b
         tol=self.err
-
+        res=[]
         fx = lambda x: eval(str(f))
         print("\n\nfunction f : ", f, " dans l'intervalle [", a, ",", b, "] \n", "--------------------------------")
 
@@ -26,5 +26,6 @@ class FalsePosition(Equa_Solver):
                 a = c
             else:
                 b = c
+            res.append((a+b)/2)
         print('Found solution after', n, 'iterations.')
-        return (a + b) / 2
+        return res

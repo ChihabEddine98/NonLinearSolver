@@ -26,7 +26,7 @@ class Dichotomie(Equa_Solver):
         print(f" Erreur     : {err} \n")
 
 
-        if( f(a)*f(b) >= 0):
+        if( f(a)*f(b) > 0):
             raise SolverException(" f(a) et f(b) doivent etre de signe différent !")
 
         else:
@@ -36,17 +36,15 @@ class Dichotomie(Equa_Solver):
 
             while (fin - debut > err):
                 millieu = (debut + fin) / 2
-                print(f"Found solution after {n} iterations : {millieu} ")
                 res.append(millieu)
+                print(f"Found solution after {n} iterations : {millieu} ")
                 n+=1
                 if (f(debut) * f(millieu) < 0):
                     fin = millieu
                 else:
                     debut = millieu
 
-            
             print(f" Solution approchée de f(x) = 0 est : {millieu}\n")
-            
             return res
 
 

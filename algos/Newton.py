@@ -12,6 +12,7 @@ class Newton(Equa_Solver):
         max_iter=self.max_iter
         x0=self.x0
         epsilon=self.err
+        res=[]
 
         fx = lambda x: eval(str(f))
         dfx = lambda x: eval(str(Df))
@@ -20,10 +21,11 @@ class Newton(Equa_Solver):
         xn = x0
         for n in range(0, max_iter):
             fxn = fx(xn)
+            res.append(xn)
             self.affiche_info(n,xn,fxn)
             if abs(fxn) < epsilon:
                 print('Found solution after', n, 'iterations.')
-                return xn
+                return res
 
             Dfxn = dfx(xn)
 

@@ -19,13 +19,14 @@ class Dichotomie(Equa_Solver):
         a , b = self.a , self.b
         err=self.err
         f = lambda x: eval(str(self.f))
+        res=[]
 
         print(f" Fonction   : {self.f}")
         print(f" Intervalle : [{a},{b}]")
         print(f" Erreur     : {err} \n")
 
 
-        if( f(a)*f(b) >= 0):
+        if( f(a)*f(b) > 0):
             raise SolverException(" f(a) et f(b) doivent etre de signe différent !")
 
         else:
@@ -35,6 +36,7 @@ class Dichotomie(Equa_Solver):
 
             while (fin - debut > err):
                 millieu = (debut + fin) / 2
+                res.append(millieu)
                 print(f"Found solution after {n} iterations : {millieu} ")
                 n+=1
                 if (f(debut) * f(millieu) < 0):
@@ -42,7 +44,7 @@ class Dichotomie(Equa_Solver):
                 else:
                     debut = millieu
 
-            return millieu
-
             print(f" Solution approchée de f(x) = 0 est : {millieu}\n")
+            return res
+
 

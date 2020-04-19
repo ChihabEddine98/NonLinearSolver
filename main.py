@@ -11,9 +11,6 @@ if __name__ == '__main__':
 
     # Tests Des méthodes :
 
-
-    guiApp=Application()
-    guiApp.mainloop()
     tester=Tester()
     tester.test()
 

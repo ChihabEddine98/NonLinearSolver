@@ -13,15 +13,28 @@ def drawGraph(x,f,markers):
 
     ax.plot(x, f(x),'m')
     ax.axhline(y=0, xmin=0.0, xmax=1.0, color='k')
+    plt.ylim(bottom=-2)
 
     for x in markers:
         plt.scatter(x, f(x), marker='o')
-        plt.pause(0.8)
+        try:
+            plt.pause(1)
+        except tk.TclError:
+            break
 
-    plt.ylim(bottom=-2)
-    plt.show()
+
 
 class DichotomiePage(tk.Frame):
+
+    def test1(self):
+        fx = "x**2-math.cos(x)"
+        f = lambda x: eval("x**2-np.cos(x)")
+
+        equa=Equa_Solver(f=fx,a=0,b=1,err=1e-15)
+        dichoRes=Dichotomie.solve(equa)
+        t = np.linspace(0, 1, 10)
+        drawGraph(t,f,dichoRes)
+
     def __init__(self,parent,controller):
 
         tk.Frame.__init__(self, parent)
@@ -91,6 +104,7 @@ class DichotomiePage(tk.Frame):
         self.btnSolve.configure(pady="0")
         self.btnSolve.configure(relief="groove")
         self.btnSolve.configure(text='''Solve''')
+        self.btnSolve.configure(command= lambda : self.test1())
 
         self.Label2_10 = tk.Label(self.Frame1)
         self.Label2_10.place(relx=-0.013, rely=0.277, height=49, width=119)
@@ -119,6 +133,7 @@ class DichotomiePage(tk.Frame):
         self.btnRetour.configure(pady="0")
         self.btnRetour.configure(relief="groove")
         self.btnRetour.configure(text='''Go Back''')
+        self.btnRetour.configure(command=lambda: controller.show_frame("WelcomePage"))
 
 class DichotomiePage2(tk.Frame):
 

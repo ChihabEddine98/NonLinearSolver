@@ -1,7 +1,10 @@
 from .Equa_Solver import *
 import numpy as np
+import math
+from .basic_functions import *
 
 
+from ast import literal_eval
 
 """
     res_equa_dct(f,a,b)
@@ -18,7 +21,11 @@ class Dichotomie(Equa_Solver):
         # Données en parametres
         a , b = self.a , self.b
         err=self.err
-        f = lambda x: eval(str(self.f))
+        try:
+            f = lambda x: eval(str(self.f))
+        except (TypeError,SyntaxError):
+            print("\n--- Oops ! fonction inconnue ! \n")
+            return
         res=[]
 
         print(f" Fonction   : {self.f}")

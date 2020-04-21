@@ -21,7 +21,7 @@ class Application(tk.Tk):
         self.title_font = tkfont.Font(family='Helvetica', size=18, weight="bold", slant="italic")
         self.resizable(width=False, height=False)
 
-        self.geometry("883x661+477+168")
+        self.geometry("883x700+350+20")
         self.title("Non Linear Equations Solver")
         self.configure(background="#000")
 

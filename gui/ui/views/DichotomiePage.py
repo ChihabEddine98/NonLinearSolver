@@ -28,6 +28,15 @@ def drawGraph(x,f,markers):
         except tk.TclError:
             break
 
+def drawGraphInWindow(t,f,self):
+    fig = Figure(figsize=(5, 5), dpi=100)
+    a = fig.add_subplot(111)
+    a.plot(t, f(t), 'm')
+    canvas = FigureCanvasTkAgg(fig, self)
+    toolbar = NavigationToolbar2TkAgg(canvas, self)
+    toolbar.update()
+    # canvas._tkcanvas.pack(side=tk.TOP,fill=tk.BOTH,expand=True)
+    canvas.get_tk_widget().place(relx=0.17, rely=0.35, height=415, width=600)
 
 
 class DichotomiePage(tk.Frame):
@@ -39,24 +48,12 @@ class DichotomiePage(tk.Frame):
         equa=Equa_Solver(f=fx,a=0,b=1,err=1e-15)
         dichoRes=Dichotomie.solve(equa)
         t = np.linspace(0, 1, 10)
-        fig=Figure(figsize=(5,5),dpi=100)
-        a = fig.add_subplot(111)
-        a.plot(t, f(t), 'm')
-        canvas=FigureCanvasTkAgg(fig,self)
-        toolbar=NavigationToolbar2TkAgg(canvas,self)
-        toolbar.update()
-        #canvas._tkcanvas.pack(side=tk.TOP,fill=tk.BOTH,expand=True)
-        canvas.get_tk_widget().place(relx=0.17, rely=0.35, height=415, width=600)
 
         # ax.plot(x, f(x), 'm')
         # ax.axhline(y=0, xmin=0.0, xmax=1.0, color='k')
         # a.ylim(bottom=-2)
 
-        for x in dichoRes:
-            a.scatter(x, f(x), marker='o')
-
-
-        # drawGraph(t,f,dichoRes)
+        drawGraph(t,f,dichoRes)
 
         # f=Figure(figsize=(5,5),dpi=100)
         # a=f.add_subplot(111)
@@ -87,15 +84,15 @@ class DichotomiePage(tk.Frame):
         self.mainFrame.configure(highlightcolor="black")
 
         self.titleFrame = tk.Frame(self.mainFrame)
-        self.titleFrame.place(relx=0.487, rely=0.0, relheight=0.088
-                , relwidth=0.519)
+        self.titleFrame.place(relx=0.166, rely=0.082, relheight=0.114
+                              , relwidth=0.674)
         self.titleFrame.configure(relief="groove")
         self.titleFrame.configure(background="#000")
         self.titleFrame.configure(highlightbackground="#d9d9d9")
         self.titleFrame.configure(highlightcolor="black")
 
         self.Label1 = tk.Label(self.titleFrame)
-        self.Label1.place(relx=-0.02, rely=0.156, height=40, width=460)
+        self.Label1.place(relx=0.031, rely=0.12, height=52, width=597)
         self.Label1.configure(activebackground="#f9f9f9")
         self.Label1.configure(activeforeground="black")
         self.Label1.configure(background="#000")
@@ -107,29 +104,32 @@ class DichotomiePage(tk.Frame):
         self.Label1.configure(text='''Méthode De dichotomie''')
 
         self.Frame1 = tk.Frame(self.mainFrame)
-        self.Frame1.place(relx=0.083, rely=0.082, relheight=0.28, relwidth=0.821)
-
+        self.Frame1.place(relx=0.093, rely=0.302, relheight=0.431
+                          , relwidth=0.821)
         self.Frame1.configure(relief="groove")
         self.Frame1.configure(background="#000")
         self.Frame1.configure(highlightbackground="#d9d9d9")
         self.Frame1.configure(highlightcolor="black")
 
         self.entryFomule = tk.Entry(self.Frame1)
-        self.entryFomule.place(relx=0.227, rely=0.294, height=54, relwidth=0.736)
+        self.entryFomule.place(relx=0.227, rely=0.293, height=54, relwidth=0.736)
 
         self.entryFomule.configure(background="#000")
+        self.entryFomule.configure(disabledbackground="#9bd2aa")
         self.entryFomule.configure(disabledforeground="#a3a3a3")
-        self.entryFomule.configure(font="-family {Tw Cen MT} -size 20")
+        self.entryFomule.configure(font=font11)
         self.entryFomule.configure(foreground="#00ff00")
-        self.entryFomule.configure(highlightbackground="#d9d9d9")
-        self.entryFomule.configure(highlightcolor="black")
-        self.entryFomule.configure(insertbackground="black")
-        self.entryFomule.configure(relief="groove")
+        self.entryFomule.configure(highlightbackground="#00ff00")
+        self.entryFomule.configure(highlightcolor="#00ff00")
+        self.entryFomule.configure(highlightthickness="1")
+        self.entryFomule.configure(insertbackground="#00ff00")
+        self.entryFomule.configure(insertborderwidth="1")
+        self.entryFomule.configure(relief="flat")
         self.entryFomule.configure(selectbackground="#c4c4c4")
         self.entryFomule.configure(selectforeground="black")
 
         self.Label2 = tk.Label(self.Frame1)
-        self.Label2.place(relx=0.277, rely=0.049, height=31, width=321)
+        self.Label2.place(relx=0.34, rely=0.064, height=48, width=321)
         self.Label2.configure(activebackground="#f9f9f9")
         self.Label2.configure(activeforeground="black")
         self.Label2.configure(background="#000")
@@ -141,23 +141,25 @@ class DichotomiePage(tk.Frame):
         self.Label2.configure(text='''Entrez la formule :''')
 
         self.btnSolve = tk.Button(self.Frame1)
-        self.btnSolve.place(relx=0.296, rely=0.637, height=53, width=276)
+        self.btnSolve.place(relx=0.315, rely=0.637, height=53, width=276)
         self.btnSolve.configure(activebackground="#80ff00")
         self.btnSolve.configure(activeforeground="#000000")
         self.btnSolve.configure(background="#000")
+        self.btnSolve.configure(cursor="arrow")
         self.btnSolve.configure(disabledforeground="#a3a3a3")
         self.btnSolve.configure(font="-family {Tw Cen MT} -size 20")
         self.btnSolve.configure(foreground="#fff")
-        self.btnSolve.configure(highlightbackground="#d9d9d9")
-        self.btnSolve.configure(highlightcolor="black")
+        self.btnSolve.configure(highlightbackground="#00ff00")
+        self.btnSolve.configure(highlightcolor="#00ff00")
+        self.btnSolve.configure(highlightthickness="2")
         self.btnSolve.configure(pady="0")
-        self.btnSolve.configure(relief="groove")
+        self.btnSolve.configure(relief="flat")
         self.btnSolve.configure(text='''Solve''')
         self.btnSolve.configure(command= lambda : self.test1())
 
 
         self.Label2_10 = tk.Label(self.Frame1)
-        self.Label2_10.place(relx=0.076, rely=0.343, height=31, width=100)
+        self.Label2_10.place(relx=0.076, rely=0.287, height=48, width=100)
         self.Label2_10.configure(activebackground="#f9f9f9")
         self.Label2_10.configure(activeforeground="black")
         self.Label2_10.configure(background="#000")
@@ -169,7 +171,7 @@ class DichotomiePage(tk.Frame):
         self.Label2_10.configure(text='''f(x) =''')
 
         self.btnRetour = tk.Button(self.mainFrame)
-        self.btnRetour.place(relx=0.021, rely=0.014, height=43, width=186)
+        self.btnRetour.place(relx=0.031, rely=0.893, height=43, width=186)
         self.btnRetour.configure(activebackground="#80ff00")
         self.btnRetour.configure(activeforeground="#000000")
         self.btnRetour.configure(background="#b0b8ce")

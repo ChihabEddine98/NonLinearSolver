@@ -1,5 +1,5 @@
 from .Equa_Solver import *
-import math
+import numpy as np
 
 
 

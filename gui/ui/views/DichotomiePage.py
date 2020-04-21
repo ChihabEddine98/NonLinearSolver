@@ -42,8 +42,11 @@ def drawGraphInWindow(t,f,self):
 class DichotomiePage(tk.Frame):
 
     def test1(self):
+        formule=self.entryFomule.get()
+        print(f'{formule}')
         fx = "x**2-math.cos(x)"
-        f = lambda x: eval("x**2-np.cos(x)")
+        fx=formule
+        f = lambda x: eval(fx)
 
         equa=Equa_Solver(f=fx,a=0,b=1,err=1e-15)
         dichoRes=Dichotomie.solve(equa)

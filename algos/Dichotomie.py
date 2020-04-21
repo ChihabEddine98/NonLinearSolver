@@ -24,7 +24,6 @@ class Dichotomie(Equa_Solver):
         try:
             f = lambda x: eval(str(self.f))
         except (TypeError,SyntaxError):
-            print("\n--- Oops ! fonction inconnue ! \n")
             return
         res=[]
 

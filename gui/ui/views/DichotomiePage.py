@@ -52,21 +52,26 @@ class DichotomiePage(tk.Frame):
         try:
             a = float(self.entryA.get())
             b = float(self.entryB.get())
+            equa = Equa_Solver(f=fx, a=a, b=b, err=1e-15)
+            dichoRes = Dichotomie.solve(equa)
+            t = np.linspace(a, b, 10)
+            drawGraph(t, f, dichoRes)
+
         except ValueError as verr:
            showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")
            return
+        except (TypeError,SyntaxError):
+            showerror(title=" Formule érronée", message=" La fonction que vous avez entré n'est pas correcte !")
+            return
         except Exception as ex:
             showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")
             return
-        equa=Equa_Solver(f=fx,a=a,b=b,err=1e-15)
-        dichoRes=Dichotomie.solve(equa)
-        t = np.linspace(a, b, 10)
+
 
         # ax.plot(x, f(x), 'm')
         # ax.axhline(y=0, xmin=0.0, xmax=1.0, color='k')
         # a.ylim(bottom=-2)
 
-        drawGraph(t,f,dichoRes)
 
         # f=Figure(figsize=(5,5),dpi=100)
         # a=f.add_subplot(111)

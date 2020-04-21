@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter.messagebox import showerror
 import numpy as np
 import matplotlib as mp
 mp.use("TkAgg")
@@ -48,9 +49,18 @@ class DichotomiePage(tk.Frame):
         fx=formule
         f = lambda x: eval(fx)
 
-        equa=Equa_Solver(f=fx,a=0,b=1,err=1e-15)
+        try:
+            a = float(self.entryA.get())
+            b = float(self.entryB.get())
+        except ValueError as verr:
+           showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")
+           return
+        except Exception as ex:
+            showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")
+            return
+        equa=Equa_Solver(f=fx,a=a,b=b,err=1e-15)
         dichoRes=Dichotomie.solve(equa)
-        t = np.linspace(0, 1, 10)
+        t = np.linspace(a, b, 10)
 
         # ax.plot(x, f(x), 'm')
         # ax.axhline(y=0, xmin=0.0, xmax=1.0, color='k')

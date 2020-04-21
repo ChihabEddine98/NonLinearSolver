@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0757fb08-ca9f-4064-85e7-6c38f630297f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/gui/ui/views/DichotomiePage.py" afterPath="$PROJECT_DIR$/gui/ui/views/DichotomiePage.py" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak1" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak1" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak2" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak2" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak3" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak3" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak1" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak1" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak2" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak2" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak3" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak3" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -111,8 +102,8 @@
       <file leaf-file-name="DichotomiePage.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gui/ui/views/DichotomiePage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="149" column="61" lean-forward="false" selection-start-line="149" selection-start-column="61" selection-end-line="149" selection-end-column="61" />
+            <state relative-caret-position="137">
+              <caret line="154" column="44" lean-forward="false" selection-start-line="154" selection-start-column="44" selection-end-line="154" selection-end-column="44" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -706,8 +697,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gui/ui/views/DichotomiePage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="149" column="61" lean-forward="false" selection-start-line="149" selection-start-column="61" selection-end-line="149" selection-end-column="61" />
+        <state relative-caret-position="137">
+          <caret line="154" column="44" lean-forward="false" selection-start-line="154" selection-start-column="44" selection-end-line="154" selection-end-column="44" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>

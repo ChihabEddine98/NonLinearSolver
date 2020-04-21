@@ -152,7 +152,7 @@ class DichotomiePage(tk.Frame):
         self.Label2_10.configure(activeforeground="black")
         self.Label2_10.configure(background="#000")
         self.Label2_10.configure(disabledforeground="#a3a3a3")
-        self.Label2_10.configure(font="-family {Yu Gothic UI Semibold} -size 24 -weight bold")
+        self.Label2_10.configure(font=font14)
         self.Label2_10.configure(foreground="#fff")
         self.Label2_10.configure(highlightbackground="#d9d9d9")
         self.Label2_10.configure(highlightcolor="black")

@@ -44,12 +44,10 @@ class DichotomiePage(tk.Frame):
 
     def test1(self):
         formule=self.entryFomule.get()
-        print(f'{formule}')
-        fx = "x**2-math.cos(x)"
         fx=formule
-        f = lambda x: eval(fx)
 
         try:
+            f = lambda x: eval(fx)
             a = float(self.entryA.get())
             b = float(self.entryB.get())
             equa = Equa_Solver(f=fx, a=a, b=b, err=1e-15)
@@ -62,6 +60,9 @@ class DichotomiePage(tk.Frame):
            return
         except (TypeError,SyntaxError):
             showerror(title=" Formule érronée", message=" La fonction que vous avez entré n'est pas correcte !")
+            return
+        except SolverException:
+            showerror(title=" monotonie !", message=" La fonction que vous avez entré n'est pas monotonne \n f(a)f(b) > 0 !")
             return
         except Exception as ex:
             showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")

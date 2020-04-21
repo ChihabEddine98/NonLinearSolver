@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0757fb08-ca9f-4064-85e7-6c38f630297f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/algos/Dichotomie.py" afterPath="$PROJECT_DIR$/algos/Dichotomie.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/gui/ui/views/DichotomiePage.py" afterPath="$PROJECT_DIR$/gui/ui/views/DichotomiePage.py" />
+      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py" />
+      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak1" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak1" />
+      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak2" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak2" />
+      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak3" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak3" />
+      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl" />
+      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak1" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak1" />
+      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak2" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak2" />
+      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak3" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak3" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/gui/App.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="56">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -58,18 +67,18 @@
       <file leaf-file-name="dicho_page.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui/ui_tk/dicho_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="175" column="0" lean-forward="true" selection-start-line="68" selection-start-column="1" selection-end-line="175" selection-end-column="0" />
+            <state relative-caret-position="168">
+              <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="216" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dichotomie.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dichotomie.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algos/Dichotomie.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+            <state relative-caret-position="188">
+              <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -81,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/algos/basic_functions.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1428">
-              <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+              <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -91,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/tests/DichotomieTester.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+              <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -99,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DichotomiePage.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DichotomiePage.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gui/ui/views/DichotomiePage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+            <state relative-caret-position="81">
+              <caret line="149" column="61" lean-forward="false" selection-start-line="149" selection-start-column="61" selection-end-line="149" selection-end-column="61" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -115,7 +124,7 @@
         <entry file="file://$PROJECT_DIR$/algos/Equa_Solver.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="28">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -133,6 +142,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Chiha</find>
+      <find>f(x)</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,9 +169,9 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/gui/App.py" />
-        <option value="$PROJECT_DIR$/gui/ui/views/DichotomiePage.py" />
         <option value="$PROJECT_DIR$/algos/basic_functions.py" />
         <option value="$PROJECT_DIR$/algos/Dichotomie.py" />
+        <option value="$PROJECT_DIR$/gui/ui/views/DichotomiePage.py" />
       </list>
     </option>
   </component>
@@ -632,28 +642,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui/ui_tk/dicho_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="175" column="0" lean-forward="true" selection-start-line="68" selection-start-column="1" selection-end-line="175" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gui/ui/views/DichotomiePage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/algos/Equa_Solver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -661,7 +653,7 @@
     <entry file="file://$PROJECT_DIR$/tests/DichotomieTester.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -671,7 +663,7 @@
     <entry file="file://$PROJECT_DIR$/gui/App.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -689,17 +681,35 @@
     <entry file="file://$PROJECT_DIR$/algos/basic_functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1428">
-          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algos/Dichotomie.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        <state relative-caret-position="188">
+          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/ui_tk/dicho_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="216" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/ui/views/DichotomiePage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="149" column="61" lean-forward="false" selection-start-line="149" selection-start-column="61" selection-end-line="149" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>

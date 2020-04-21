@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0757fb08-ca9f-4064-85e7-6c38f630297f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/gui/ui/views/DichotomiePage.py" afterPath="$PROJECT_DIR$/gui/ui/views/DichotomiePage.py" />
+      <change beforePath="$PROJECT_DIR$/algos/Cordes.py" afterPath="$PROJECT_DIR$/algos/Cordes.py" />
+      <change beforePath="$PROJECT_DIR$/gui/App.py" afterPath="$PROJECT_DIR$/gui/App.py" />
+      <change beforePath="$PROJECT_DIR$/gui/ui/views/CordesPage.py" afterPath="$PROJECT_DIR$/gui/ui/views/CordesPage.py" />
+      <change beforePath="$PROJECT_DIR$/gui/ui/views/WelcomePage.py" afterPath="$PROJECT_DIR$/gui/ui/views/WelcomePage.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,33 +17,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="App.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui/App.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cordes.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algos/Cordes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-2347">
+              <caret line="42" column="56" lean-forward="false" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#1#21#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,9 +32,21 @@
       <file leaf-file-name="WelcomePage.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui/ui/views/WelcomePage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+            <state relative-caret-position="452">
+              <caret line="108" column="84" lean-forward="false" selection-start-line="108" selection-start-column="84" selection-end-line="108" selection-end-column="84" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cordes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/algos/Cordes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,7 +64,7 @@
       <file leaf-file-name="Dichotomie.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algos/Dichotomie.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
+            <state relative-caret-position="104">
               <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="33" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -100,11 +95,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DichotomiePage.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DichotomiePage.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gui/ui/views/DichotomiePage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+            <state relative-caret-position="501">
+              <caret line="143" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="322" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CordesPage.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gui/ui/views/CordesPage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="51" column="10" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -154,16 +161,17 @@
         <option value="$PROJECT_DIR$/gui/ui/WelcomePage.py" />
         <option value="$PROJECT_DIR$/gui/ui_tk/welcome_page.py" />
         <option value="$PROJECT_DIR$/gui/ui/views/NewtonPage.py" />
-        <option value="$PROJECT_DIR$/gui/ui/views/CordesPage.py" />
         <option value="$PROJECT_DIR$/gui/ui/views/FalsePosPage.py" />
-        <option value="$PROJECT_DIR$/gui/ui/views/WelcomePage.py" />
         <option value="$PROJECT_DIR$/gui/ui_tk/dicho_page.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/gui/App.py" />
         <option value="$PROJECT_DIR$/algos/basic_functions.py" />
         <option value="$PROJECT_DIR$/algos/Dichotomie.py" />
         <option value="$PROJECT_DIR$/gui/ui/views/DichotomiePage.py" />
+        <option value="$PROJECT_DIR$/algos/Cordes.py" />
+        <option value="$PROJECT_DIR$/gui/App.py" />
+        <option value="$PROJECT_DIR$/gui/ui/views/WelcomePage.py" />
+        <option value="$PROJECT_DIR$/gui/ui/views/CordesPage.py" />
       </list>
     </option>
   </component>
@@ -434,7 +442,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3976">
           <caret line="162" column="0" lean-forward="true" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -509,7 +519,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4004">
           <caret line="163" column="42" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -579,13 +591,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gui/ui/WelcomePage.py" />
-    <entry file="file://$PROJECT_DIR$/gui/ui/views/CordesPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gui/ui/views/FalsePosPage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -618,14 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui/ui/views/WelcomePage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -652,24 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui/App.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algos/Cordes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/algos/basic_functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1428">
@@ -686,9 +665,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gui/ui/views/DichotomiePage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="143" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="322" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/algos/Dichotomie.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="104">
           <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="33" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -696,10 +685,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gui/ui/views/DichotomiePage.py">
+    <entry file="file://$PROJECT_DIR$/algos/Cordes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+        <state relative-caret-position="409">
+          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/App.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2347">
+          <caret line="42" column="56" lean-forward="false" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
+          <folding>
+            <element signature="e#1#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/ui/views/WelcomePage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="108" column="84" lean-forward="false" selection-start-line="108" selection-start-column="84" selection-end-line="108" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gui/ui/views/CordesPage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="51" column="10" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>

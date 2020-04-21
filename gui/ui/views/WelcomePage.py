@@ -106,3 +106,4 @@ class WelcomePage(tk.Frame):
         self.btnCordes.configure(pady="0")
         self.btnCordes.configure(relief="ridge")
         self.btnCordes.configure(text='''Cordes''')
+        self.btnCordes.configure(command= lambda : controller.show_frame("CordesPage"))

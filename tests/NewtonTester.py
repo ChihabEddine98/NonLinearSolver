@@ -1,21 +1,8 @@
 from algos.Newton import *
 from algos.Equa_Solver import *
+from convergence_rate import *
 
 import math
-from math import log
-
-def rate(x_list, x_final):
-    e = [abs(x_ - x_final) for x_ in x_list]
-    print (e)
-    q = [(log(e[n+1]/e[n]))/(log(e[n]/e[n-1])) for n in range(1, len(e)-1, 1)]
-    return q
-
-def print_rates( x_list, x_final):
-    q = ['%.2f' % q_ for q_ in rate(x_list, x_final)]
-    print ("Convergence rate : ")
-    for q_ in q:
-        print(q_)
-    print()
 
 class NewtonTester:
 
@@ -56,7 +43,7 @@ class NewtonTester:
         f="cos(2*x)**2 - x**2"
         equa=Newton(f=f,err=1e-10,x0=0.75,max_iter=10)
         x_list=Newton.solve(equa)
-        
+        print("X_LIST : ",x_list)
         x_final=x_list[-1]
         x_list.pop()
 

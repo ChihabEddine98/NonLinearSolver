@@ -53,8 +53,7 @@ class Tester:
 
 
 
-        print('----- NB : méthode Newton --------')
-        print("\n \n on remarque que la puissance de l'erreur double à chaque itération,donc la méthode est d'ordre 2,\n La convergence est quadratique.")
+        
 
 
 

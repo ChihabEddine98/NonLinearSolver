@@ -9,17 +9,18 @@ class Cordes(Equa_Solver):
         a,b =self.a,self.b
         max_iter=self.max_iter
         epsilon=self.err
+        x_list=[]
 
         fx = lambda x: eval(str(f))
         print("\n\nfunction f : ", f, " dans l'intervalle [", a, ",", b, "] \n", "--------------------------------")
 
-        res=[]
+
         for n in range(0, max_iter):
             self.affiche_info(n, b, fx(b))
-            res.append(b)
+            x_list.append(b)
             if (abs(a - b) < epsilon):
                 print('Found solution after', n, 'iterations.')
-                return res
+                return x_list
 
             z = (a * fx(b) - b * fx(a)) / (fx(b) - fx(a))
             a, b = b, z

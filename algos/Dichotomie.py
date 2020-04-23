@@ -25,7 +25,7 @@ class Dichotomie(Equa_Solver):
             f = lambda x: eval(str(self.f))
         except (TypeError,SyntaxError):
             return
-        res=[]
+        x_list=[]
 
         print(f" Fonction   : {self.f}")
         print(f" Intervalle : [{a},{b}]")
@@ -42,7 +42,7 @@ class Dichotomie(Equa_Solver):
 
             while (fin - debut > err):
                 millieu = (debut + fin) / 2
-                res.append(millieu)
+                x_list.append(millieu)
                 print(f"Found solution after {n} iterations : {millieu} ")
                 n+=1
                 if (f(debut) * f(millieu) < 0):
@@ -51,6 +51,6 @@ class Dichotomie(Equa_Solver):
                     debut = millieu
 
             print(f" Solution approchée de f(x) = 0 est : {millieu}\n")
-            return res
+            return x_list
 
 

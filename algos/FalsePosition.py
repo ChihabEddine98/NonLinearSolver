@@ -8,7 +8,7 @@ class FalsePosition(Equa_Solver):
         f=self.f
         a,b=self.a,self.b
         tol=self.err
-        res=[]
+        x_list=[]
         fx = lambda x: eval(str(f))
         print("\n\nfunction f : ", f, " dans l'intervalle [", a, ",", b, "] \n", "--------------------------------")
 
@@ -19,13 +19,16 @@ class FalsePosition(Equa_Solver):
         while abs(b - a) > 2 * tol:
             n += 1
             c = (a * fx(b) - b * fx(a)) / (fx(b) - fx(a))
+            x_list.append(c)
+
             if fx(c - tol) * fx(c + tol) <= 0:
                 print('Found solution after', n, 'iterations.')
-                return c
+                return x_list
             if fx(a) * fx(c) > 0:
                 a = c
             else:
                 b = c
-            res.append((a+b)/2)
+            
         print('Found solution after', n, 'iterations.')
-        return res
+        x_list.append((a+b)/2)
+        return x_list

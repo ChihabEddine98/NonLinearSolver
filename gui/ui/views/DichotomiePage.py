@@ -2,8 +2,8 @@ import tkinter as tk
 from tkinter.messagebox import showerror
 import numpy as np
 import matplotlib as mp
-mp.use("TkAgg")
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg,NavigationToolbar2TkAgg
+# mp.use("TkAgg")
+# from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg,NavigationToolbar2TkAgg
 from matplotlib.figure import Figure
 import time
 import matplotlib.pyplot as plt
@@ -29,15 +29,15 @@ def drawGraph(x,f,markers):
         except tk.TclError:
             break
 
-def drawGraphInWindow(t,f,self):
-    fig = Figure(figsize=(5, 5), dpi=100)
-    a = fig.add_subplot(111)
-    a.plot(t, f(t), 'm')
-    canvas = FigureCanvasTkAgg(fig, self)
-    toolbar = NavigationToolbar2TkAgg(canvas, self)
-    toolbar.update()
-    # canvas._tkcanvas.pack(side=tk.TOP,fill=tk.BOTH,expand=True)
-    canvas.get_tk_widget().place(relx=0.17, rely=0.35, height=415, width=600)
+# def drawGraphInWindow(t,f,self):
+#     fig = Figure(figsize=(5, 5), dpi=100)
+#     a = fig.add_subplot(111)
+#     a.plot(t, f(t), 'm')
+#     canvas = FigureCanvasTkAgg(fig, self)
+#     toolbar = NavigationToolbar2TkAgg(canvas, self)
+#     toolbar.update()
+#     # canvas._tkcanvas.pack(side=tk.TOP,fill=tk.BOTH,expand=True)
+#     canvas.get_tk_widget().place(relx=0.17, rely=0.35, height=415, width=600)
 
 
 class DichotomiePage(tk.Frame):

@@ -7,7 +7,8 @@ import matplotlib as mp
 from matplotlib.figure import Figure
 import time
 import matplotlib.pyplot as plt
-
+from matplotlib import style
+style.use('seaborn-bright')
 
 
 
@@ -16,16 +17,43 @@ from algos.Equa_Solver import *
 
 
 def drawGraph(x,f,markers):
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(2,1)
 
-    ax.plot(x, f(x),'m')
-    ax.axhline(y=0, xmin=0.0, xmax=1.0, color='k')
+    ax[1].plot(x, f(x),'m')
+    ax[1].axhline(y=0, xmin=0.0, xmax=1.0, color='k')
     plt.ylim(bottom=-2)
 
+    data=[]
+    i=0
+    for x in markers :
+        if i<10:
+           data.append((x,f(x)))
+        i+=1
+
+    clust_data = np.random.random((2, 18))
+    collabel = ('xn','f(xn)')
+    ax[0].axis('tight')
+    ax[0].axis('off')
+    the_table = ax[0].table(cellText=data, colLabels=collabel, loc='center')
+
+    ax[1].text(0,3, 'Hello World !', horizontalalignment='center',
+             verticalalignment='center', fontsize=14, color='r')
+
+    plt.xticks(markers)
+
     for x in markers:
-        plt.scatter(x, f(x), marker='o')
+        plt.scatter(x, f(x), marker='o',linestyle='--')
+        if f(x)>0 :
+            yMax=1
+            yMin=0.8
+        else:
+            yMax=0.8
+            yMin=0.4
+
+
+        plt.axvline(x=x,color='k',linestyle='--')
         try:
-            plt.pause(1)
+            plt.pause(1.5)
         except tk.TclError:
             break
 
@@ -52,7 +80,7 @@ class DichotomiePage(tk.Frame):
             b = float(self.entryB.get())
             equa = Equa_Solver(f=fx, a=a, b=b, err=1e-15)
             dichoRes = Dichotomie.solve(equa)
-            t = np.linspace(a, b, 10)
+            t = np.linspace(a, b, 10,endpoint = False)
             drawGraph(t, f, dichoRes)
 
         except ValueError as verr:

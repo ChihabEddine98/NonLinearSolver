@@ -12,7 +12,7 @@ class Newton(Equa_Solver):
         max_iter=self.max_iter
         x0=self.x0
         epsilon=self.err
-        res=[]
+        x_list=[]
 
         fx = lambda x: eval(str(f))
         dfx = lambda x: eval(str(Df))
@@ -21,11 +21,12 @@ class Newton(Equa_Solver):
         xn = x0
         for n in range(0, max_iter):
             fxn = fx(xn)
-            res.append(xn)
+            x_list.append(xn)
             self.affiche_info(n,xn,fxn)
             if abs(fxn) < epsilon:
                 print('Found solution after', n, 'iterations.')
-                return res
+                print("the approximate solution is : ",x_list[-1])
+                return x_list
 
             Dfxn = dfx(xn)
 
@@ -42,6 +43,8 @@ class Newton(Equa_Solver):
         max_iter=self.max_iter
         x0=self.x0
         epsilon=self.err
+        x_list=[]
+
 
         x = Symbol('x')
         fx = lambda x: eval(str(f))
@@ -52,10 +55,13 @@ class Newton(Equa_Solver):
 
         for n in range(0, max_iter):
             fxn = fx(xn)
+            x_list.append(xn)
             self.affiche_info(n, xn, fxn)
             if abs(fxn) < epsilon:
                 print('Found solution after', n, 'iterations.')
-                return xn
+                print("the approximate solution is : ",x_list[-1])
+                return x_list
+                
             Dfxn = dfx(xn)
             if Dfxn == 0:
                 print('Zero derivative. No solution found.')
@@ -69,3 +75,5 @@ class Newton(Equa_Solver):
             return self.solve_with_df()
 
         return self.solve_without_df()
+
+   

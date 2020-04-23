@@ -36,7 +36,7 @@ def drawGraph(x,f,markers):
     ax[0].axis('off')
     the_table = ax[0].table(cellText=data, colLabels=collabel, loc='center')
 
-    ax[1].text(0,3, 'Hello World !', horizontalalignment='center',
+    plt.text(0.1,-2.4, 'here !', horizontalalignment='center',
              verticalalignment='center', fontsize=14, color='r')
 
     plt.xticks(markers)

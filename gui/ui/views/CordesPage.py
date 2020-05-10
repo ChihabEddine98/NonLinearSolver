@@ -13,21 +13,8 @@ import matplotlib.pyplot as plt
 
 from algos.Cordes import *
 from algos.Equa_Solver import *
+from .BasePage import drawGraph
 
-
-def drawGraph(x,f,markers):
-    fig, ax = plt.subplots()
-
-    ax.plot(x, f(x),'m')
-    ax.axhline(y=0, xmin=0.0, xmax=1.0, color='k')
-    plt.ylim(bottom=-2)
-
-    for x in markers:
-        plt.scatter(x, f(x), marker='o')
-        try:
-            plt.pause(1)
-        except tk.TclError:
-            break
 
 # def drawGraphInWindow(t,f,self):
 #     fig = Figure(figsize=(5, 5), dpi=100)
@@ -53,19 +40,19 @@ class CordesPage(tk.Frame):
             equa = Equa_Solver(f=fx, a=a, b=b, err=1e-15)
             cordesRes = Cordes.solve(equa)
             t = np.linspace(a, b, 10)
-            drawGraph(t, f, cordesRes)
+            drawGraph(a,b,fx,1e-15,t, f, cordesRes)
 
         except ValueError as verr:
            showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")
            return
-        except (TypeError,SyntaxError):
+        except (TypeError ,SyntaxError ) as e:
             showerror(title=" Formule érronée", message=" La fonction que vous avez entré n'est pas correcte !")
             return
         except SolverException:
             showerror(title=" monotonie !", message=" La fonction que vous avez entré n'est pas monotonne \n f(a)f(b) > 0 !")
             return
         except Exception as ex:
-            showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")
+            showerror(title=" Oops error!", message=" Just be sure from your inputs.")
             return
 
 

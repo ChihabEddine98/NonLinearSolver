@@ -1,5 +1,8 @@
 from .Equa_Solver import *
+import numpy as np
 import math
+from .basic_functions import *
+
 
 class Cordes(Equa_Solver):
 

@@ -42,7 +42,7 @@ class Application(tk.Tk):
 
 
         self.frames = {}
-        for F in ( WelcomePage,DichotomiePage,CordesPage,FalsePosPage):
+        for F in ( WelcomePage,DichotomiePage,CordesPage,NewtonPage,FalsePosPage):
             page_name = F.__name__
             frame = F(parent=container, controller=self)
             self.frames[page_name] = frame

@@ -1,7 +1,9 @@
-import math
+
 from sympy import *
 
 from .Equa_Solver import *
+from .basic_functions import *
+
 
 
 class Newton(Equa_Solver):

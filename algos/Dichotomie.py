@@ -1,6 +1,5 @@
 from .Equa_Solver import *
-import numpy as np
-import math
+
 from .basic_functions import *
 
 

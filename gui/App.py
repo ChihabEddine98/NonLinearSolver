@@ -13,6 +13,8 @@ from algos.Equa_Solver import *
 from .ui.views.WelcomePage import *
 from .ui.views.DichotomiePage import *
 from .ui.views.CordesPage import *
+from .ui.views.NewtonPage import *
+from .ui.views.FalsePosPage import *
 
 class Application(tk.Tk):
 
@@ -40,7 +42,7 @@ class Application(tk.Tk):
 
 
         self.frames = {}
-        for F in ( WelcomePage,DichotomiePage,CordesPage):
+        for F in ( WelcomePage,DichotomiePage,CordesPage,FalsePosPage):
             page_name = F.__name__
             frame = F(parent=container, controller=self)
             self.frames[page_name] = frame

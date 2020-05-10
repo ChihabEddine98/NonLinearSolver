@@ -1,5 +1,6 @@
 from .Equa_Solver import *
-import math
+from .basic_functions import *
+
 
 
 class FalsePosition(Equa_Solver):

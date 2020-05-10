@@ -76,6 +76,8 @@ class WelcomePage(tk.Frame):
         self.btnNewton.configure(pady="0")
         self.btnNewton.configure(relief="ridge")
         self.btnNewton.configure(text='''Newton''')
+        self.btnNewton.configure(command= lambda : controller.show_frame("NewtonPage"))
+
 
         self.btnFausse = tk.Button(self.Frame2)
         self.btnFausse.place(relx=0.078, rely=0.676, height=53, width=206)
@@ -91,6 +93,8 @@ class WelcomePage(tk.Frame):
         self.btnFausse.configure(pady="0")
         self.btnFausse.configure(relief="ridge")
         self.btnFausse.configure(text='''Fausse Position''')
+        self.btnFausse.configure(command= lambda : controller.show_frame("FalsePosPage"))
+
 
         self.btnCordes = tk.Button(self.Frame2)
         self.btnCordes.place(relx=0.078, rely=0.471, height=53, width=206)

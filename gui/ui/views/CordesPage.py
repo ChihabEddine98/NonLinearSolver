@@ -107,7 +107,7 @@ class CordesPage(tk.Frame):
         self.Label1.configure(foreground="#fff")
         self.Label1.configure(highlightbackground="#d9d9d9")
         self.Label1.configure(highlightcolor="black")
-        self.Label1.configure(text='''Méthode De dichotomie''')
+        self.Label1.configure(text='''Méthode De Cordes''')
 
         self.Frame1 = tk.Frame(self.mainFrame)
         self.Frame1.place(relx=0.104, rely=0.151, relheight=0.692

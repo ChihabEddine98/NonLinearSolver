@@ -16,8 +16,9 @@ from algos.Dichotomie import *
 from algos.Equa_Solver import *
 
 
-def drawGraph(x,f,markers):
+def drawGraph(a,b,fx,err,x,f,markers):
     fig, ax = plt.subplots(2,1)
+    fig.set_size_inches(9, 8)
 
     ax[1].plot(x, f(x),'m')
     ax[1].axhline(y=0, xmin=0.0, xmax=1.0, color='k')
@@ -36,8 +37,18 @@ def drawGraph(x,f,markers):
     ax[0].axis('off')
     the_table = ax[0].table(cellText=data, colLabels=collabel, loc='center')
 
-    plt.text(0.1,-2.4, 'here !', horizontalalignment='center',
-             verticalalignment='center', fontsize=14, color='r')
+
+
+    props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
+    cv= f'taux de convergence : {1.8} \nf(x)=0 for x={0.83333}'
+
+    plt.text(0.1,-2.4, cv, horizontalalignment='center',
+             verticalalignment='center', fontsize=12, color='k',bbox=props)
+
+    info=f' f(x) = {fx} \nerror ={err} \n[{int(a)},{int(b)}]'
+
+    plt.text(0.12,-0.08, info, horizontalalignment='center',
+             verticalalignment='top', fontsize=12, color='k',bbox=props)
 
     plt.xticks(markers)
 
@@ -53,7 +64,7 @@ def drawGraph(x,f,markers):
 
         plt.axvline(x=x,color='k',linestyle='--')
         try:
-            plt.pause(1.5)
+            plt.pause(3)
         except tk.TclError:
             break
 
@@ -81,7 +92,7 @@ class DichotomiePage(tk.Frame):
             equa = Equa_Solver(f=fx, a=a, b=b, err=1e-15)
             dichoRes = Dichotomie.solve(equa)
             t = np.linspace(a, b, 10,endpoint = False)
-            drawGraph(t, f, dichoRes)
+            drawGraph(a,b,fx,1e-15,t, f, dichoRes)
 
         except ValueError as verr:
            showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")

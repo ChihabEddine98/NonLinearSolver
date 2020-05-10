@@ -32,15 +32,23 @@ class NewtonPage(tk.Frame):
     def test1(self):
         formule=self.entryFomule.get()
         fx=formule
+        err=float(self.entryErr.get()) if self.entryErr.get() else 1e-15
 
         try:
             f = lambda x: eval(fx)
             a = int(self.entryA.get())
             b = int(self.entryB.get())
-            equa = Newton(f=fx, a=a, b=b, err=1e-15)
+
+            if self.entryFomule_df:
+                dfx=self.entryFomule_df
+                equa = Newton(f=fx, df=dfx,a=a, b=b, err=err)
+
+            else:
+                equa = Newton(f=fx, a=a, b=b, err=err)
+
             cordesRes = Newton.solve(equa)
             t = np.linspace(a, b, 10)
-            drawGraph(a,b,fx,1e-15,t, f, cordesRes)
+            drawGraph(a,b,fx,err,t, f, cordesRes)
 
         except ValueError as verr:
            showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")
@@ -110,7 +118,7 @@ class NewtonPage(tk.Frame):
         self.Label1.configure(foreground="#fff")
         self.Label1.configure(highlightbackground="#d9d9d9")
         self.Label1.configure(highlightcolor="black")
-        self.Label1.configure(text='''Méthode De dichotomie''')
+        self.Label1.configure(text='''Méthode De Newton''')
 
         self.Frame1 = tk.Frame(self.mainFrame)
         self.Frame1.place(relx=0.083, rely=0.079, relheight=0.789

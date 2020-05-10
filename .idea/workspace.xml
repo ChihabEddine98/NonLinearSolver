@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0757fb08-ca9f-4064-85e7-6c38f630297f" name="Default" comment="add info data to graph for FalsePosPage.py">
+    <list default="true" id="0757fb08-ca9f-4064-85e7-6c38f630297f" name="Default" comment="add NewtonPage.py but without DF">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/App.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/ui/views/NewtonPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui/views/NewtonPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak1" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak2" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak3" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.py.bak3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak1" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak2" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak3" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui_tk/dicho_page.tcl.bak3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585572032758</updated>
       <workItem from="1589081773545" duration="660000" />
-      <workItem from="1589082492946" duration="6249000" />
+      <workItem from="1589082492946" duration="6948000" />
     </task>
     <task id="LOCAL-00001" summary="add info data to graph for DichotomiePage.py">
       <created>1589085936109</created>
@@ -110,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589087408915</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add NewtonPage.py but without DF">
+      <created>1589089084317</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589089084317</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,39 +118,40 @@
     <MESSAGE value="add info data to graph for DichotomiePage.py" />
     <MESSAGE value="add info data to graph for CordesPage.py" />
     <MESSAGE value="add info data to graph for FalsePosPage.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="add info data to graph for FalsePosPage.py" />
+    <MESSAGE value="add NewtonPage.py but without DF" />
+    <option name="LAST_COMMIT_MESSAGE" value="add NewtonPage.py but without DF" />
   </component>
   <component name="WindowStateProjectService">
     <state x="655" y="249" key="#Notifications" timestamp="1589082514072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="655" y="249" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1589082514072" />
-    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1589087407247">
+    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1589089082167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589087407247" />
-    <state width="1493" height="163" key="GridCell.Tab.0.bottom" timestamp="1589088800651">
+    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589089082167" />
+    <state width="1493" height="163" key="GridCell.Tab.0.bottom" timestamp="1589089499962">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589088800651" />
-    <state width="1493" height="163" key="GridCell.Tab.0.center" timestamp="1589088800651">
+    <state width="1493" height="163" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589089499962" />
+    <state width="1493" height="163" key="GridCell.Tab.0.center" timestamp="1589089499962">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589088800651" />
-    <state width="1493" height="163" key="GridCell.Tab.0.left" timestamp="1589088800651">
+    <state width="1493" height="163" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589089499962" />
+    <state width="1493" height="163" key="GridCell.Tab.0.left" timestamp="1589089499962">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589088800651" />
-    <state width="1493" height="163" key="GridCell.Tab.0.right" timestamp="1589088800651">
+    <state width="1493" height="163" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589089499962" />
+    <state width="1493" height="163" key="GridCell.Tab.0.right" timestamp="1589089499962">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589088800651" />
+    <state width="1493" height="163" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589089499962" />
     <state x="231" y="115" key="SettingsEditor" timestamp="1589082977586">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="231" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589082977586" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NonLinear_Equations$main.coverage" NAME="main Coverage Results" MODIFIED="1589088848167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NonLinear_Equations$main.coverage" NAME="main Coverage Results" MODIFIED="1589089499955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

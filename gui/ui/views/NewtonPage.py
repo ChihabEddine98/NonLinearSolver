@@ -46,9 +46,9 @@ class NewtonPage(tk.Frame):
             else:
                 equa = Newton(f=fx, a=a, b=b, err=err)
 
-            cordesRes = Newton.solve(equa)
+            newtonRes = Newton.solve(equa)
             t = np.linspace(a, b, 10)
-            drawGraph(a,b,fx,err,t, f, cordesRes)
+            drawGraph(a,b,fx,err,t, f, newtonRes)
 
         except ValueError as verr:
            showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")

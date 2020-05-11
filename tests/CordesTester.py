@@ -53,7 +53,7 @@ class CordesTester:
         f = "cos(x)"
         equa=Equa_Solver(f=f,a=0.0,b=3.0)
         x_list=Cordes.solve(equa)
-        print(x_list)
+        
         x_final=x_list[-1]
         x_list.pop()
         x_list.pop()
@@ -65,7 +65,7 @@ class CordesTester:
         print("|        Méthode Cordes            |")
         print("-----------------------------------", )
         f = "x**3 - 4*x + 1"
-        equa=Equa_Solver(f=f,a=1.0,b=2.0)
+        equa=Equa_Solver(f=f,a=-3.0,b=-2.0)
         x_list=Cordes.solve(equa)
 
         x_final=x_list[-1]

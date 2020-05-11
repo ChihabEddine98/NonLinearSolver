@@ -63,9 +63,9 @@ class FalsePositionTester :
         print("|        Méthode Fausse position   |")
         print("-----------------------------------", )
         f = "x**3 - 4*x + 1"
-        equa=Equa_Solver(f=f,a=1.0,b=2.0)
+        equa=Equa_Solver(f=f,a=-3.0,b=-2.0)
         x_list=FalsePosition.solve(equa)
-        print(x_list)
+        
         x_final=x_list[-1]
         x_list.pop()
 

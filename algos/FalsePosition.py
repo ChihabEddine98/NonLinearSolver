@@ -18,8 +18,10 @@ class FalsePosition(Equa_Solver):
 
         n = 0
         while abs(b - a) > 2 * tol:
-            n += 1
             c = (a * fx(b) - b * fx(a)) / (fx(b) - fx(a))
+            self.affiche_info(n, c, fx(c))
+            n += 1
+
             x_list.append(c)
 
             if fx(c - tol) * fx(c + tol) <= 0:

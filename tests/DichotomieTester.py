@@ -9,7 +9,7 @@ class DichotomieTester:
         print("|        Méthode Dichotomie        |")
         print("-----------------------------------")
 
-        f="x**2-math.cos(x)"
+        f="x**2-cos(x)"
         equa=Equa_Solver(f=f,a=0,b=1,err=1e-8)
         x_list=Dichotomie.solve(equa)
 
@@ -39,7 +39,7 @@ class DichotomieTester:
         print("-----------------------------------")
         print("|        Méthode Dichotomie        |")
         print("-----------------------------------")
-        f="math.cos(2*x)**2 - x**2"
+        f="cos(2*x)**2 - x**2"
         equa=Equa_Solver(f=f,a=0,b=2,err=1e-8)
         x_list=Dichotomie.solve(equa)
 
@@ -53,7 +53,7 @@ class DichotomieTester:
         print("-----------------------------------")
         print("|        Méthode Dichotomie        |")
         print("-----------------------------------")
-        f = "math.cos(x)"
+        f = "cos(x)"
         equa=Equa_Solver(f=f,a=0,b=2,err=1e-8)
         x_list=Dichotomie.solve(equa)
 

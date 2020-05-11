@@ -36,25 +36,25 @@ class NewtonPage(tk.Frame):
 
         try:
             f = lambda x: eval(fx)
-            a = int(self.entryA.get())
-            b = int(self.entryB.get())
+            x0 = float(self.entryA.get())
 
             if self.entryFomule_df:
                 dfx=self.entryFomule_df
-                equa = Newton(f=fx, df=dfx,a=a, b=b, err=err)
+                equa = Newton(f=fx, df=dfx,x0=x0, err=err,max_iter=10)
 
             else:
-                equa = Newton(f=fx, a=a, b=b, err=err)
+                equa = Newton(f=fx, x0=x0, err=err, max_iter=10)
 
             newtonRes = Newton.solve(equa)
-            t = np.linspace(a, b, 10)
-            drawGraph(a,b,fx,err,t, f, newtonRes)
+            t = np.linspace(x0, 3, 10)
+            drawGraph(x0,x0,fx,err,t, f, newtonRes)
 
         except ValueError as verr:
            showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")
            return
         except (TypeError ,SyntaxError ) as e:
             print(e)
+
             showerror(title=" Formule érronée", message=" La fonction que vous avez entré n'est pas correcte !")
             return
         except SolverException:
@@ -201,36 +201,36 @@ class NewtonPage(tk.Frame):
         self.Label2_2.configure(foreground="#fff")
         self.Label2_2.configure(highlightbackground="#d9d9d9")
         self.Label2_2.configure(highlightcolor="black")
-        self.Label2_2.configure(text='''a''')
+        self.Label2_2.configure(text='''Xo''')
 
-        self.Label2_3 = tk.Label(self.Frame1)
-        self.Label2_3.place(relx=0.692, rely=0.443, height=46, width=80)
-        self.Label2_3.configure(activebackground="#f9f9f9")
-        self.Label2_3.configure(activeforeground="black")
-        self.Label2_3.configure(background="#000")
-        self.Label2_3.configure(disabledforeground="#a3a3a3")
-        self.Label2_3.configure(font="-family {Yu Gothic UI Semibold} -size 24 -weight bold")
-        self.Label2_3.configure(foreground="#fff")
-        self.Label2_3.configure(highlightbackground="#d9d9d9")
-        self.Label2_3.configure(highlightcolor="black")
-        self.Label2_3.configure(text='''b''')
-
-        self.entryB = tk.Entry(self.Frame1)
-        self.entryB.place(relx=0.541, rely=0.557,height=54, relwidth=0.423)
-        self.entryB.configure(background="#000")
-        self.entryB.configure(cursor="fleur")
-        self.entryB.configure(disabledbackground="#9bd2aa")
-        self.entryB.configure(disabledforeground="#a3a3a3")
-        self.entryB.configure(font="-family {Tw Cen MT} -size 20")
-        self.entryB.configure(foreground="#00ff00")
-        self.entryB.configure(highlightbackground="#00ff00")
-        self.entryB.configure(highlightcolor="#00ff00")
-        self.entryB.configure(highlightthickness="1")
-        self.entryB.configure(insertbackground="#00ff00")
-        self.entryB.configure(insertborderwidth="1")
-        self.entryB.configure(relief="flat")
-        self.entryB.configure(selectbackground="#c4c4c4")
-        self.entryB.configure(selectforeground="black")
+        # self.Label2_3 = tk.Label(self.Frame1)
+        # self.Label2_3.place(relx=0.692, rely=0.443, height=46, width=80)
+        # self.Label2_3.configure(activebackground="#f9f9f9")
+        # self.Label2_3.configure(activeforeground="black")
+        # self.Label2_3.configure(background="#000")
+        # self.Label2_3.configure(disabledforeground="#a3a3a3")
+        # self.Label2_3.configure(font="-family {Yu Gothic UI Semibold} -size 24 -weight bold")
+        # self.Label2_3.configure(foreground="#fff")
+        # self.Label2_3.configure(highlightbackground="#d9d9d9")
+        # self.Label2_3.configure(highlightcolor="black")
+        # self.Label2_3.configure(text='''b''')
+        #
+        # self.entryB = tk.Entry(self.Frame1)
+        # self.entryB.place(relx=0.541, rely=0.557,height=54, relwidth=0.423)
+        # self.entryB.configure(background="#000")
+        # self.entryB.configure(cursor="fleur")
+        # self.entryB.configure(disabledbackground="#9bd2aa")
+        # self.entryB.configure(disabledforeground="#a3a3a3")
+        # self.entryB.configure(font="-family {Tw Cen MT} -size 20")
+        # self.entryB.configure(foreground="#00ff00")
+        # self.entryB.configure(highlightbackground="#00ff00")
+        # self.entryB.configure(highlightcolor="#00ff00")
+        # self.entryB.configure(highlightthickness="1")
+        # self.entryB.configure(insertbackground="#00ff00")
+        # self.entryB.configure(insertborderwidth="1")
+        # self.entryB.configure(relief="flat")
+        # self.entryB.configure(selectbackground="#c4c4c4")
+        # self.entryB.configure(selectforeground="black")
 
         self.entryErr = tk.Entry(self.Frame1)
         self.entryErr.place(relx=0.049, rely=0.778,height=54, relwidth=0.423)

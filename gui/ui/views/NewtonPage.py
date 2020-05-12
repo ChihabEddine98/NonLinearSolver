@@ -14,6 +14,7 @@ import matplotlib.pyplot as plt
 from algos.Newton import *
 from algos.Equa_Solver import *
 from .BasePage import drawGraph
+from convergence_rate import *
 
 
 # def drawGraphInWindow(t,f,self):
@@ -49,15 +50,20 @@ class NewtonPage(tk.Frame):
                 equa = Newton(f=fx, x0=x0, err=err, max_iter=10)
 
             newtonRes = Newton.solve(equa)
+            newtonRes_final=newtonRes[-1]
+            newtonRes.pop()
             t = np.linspace(x0, 3, 10)
-            drawGraph(x0,x0,fx,err,t, f, newtonRes)
+            cv=rate(newtonRes,newtonRes_final)[-1].__format__('.2f')
+            drawGraph(x0,x0,fx,err,t, f, newtonRes,cv=cv)
+
 
         except ValueError as verr:
-           showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")
+           print(verr.with_traceback())
+           showerror(title=" Intervalle érroné", message=" Le Xo doit etre un nombre   !")
            return
         except (TypeError ,SyntaxError ) as e:
             if type(e)== TypeError :
-                showerror(title=" Max iter Dépassé ", message=" Oops ! on vient de dépassé le max_iter donné !")
+                showerror(title=" Max iter Dépassé ", message=" Oops ! on vient de dépassé le max_iter donné ")
             else:
                 showerror(title=" Formule érronée", message=" La fonction que vous avez entré n'est pas correcte !")
 

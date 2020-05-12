@@ -56,11 +56,14 @@ class NewtonPage(tk.Frame):
            showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")
            return
         except (TypeError ,SyntaxError ) as e:
-            print(e)
-            showerror(title=" Formule érronée", message=" La fonction que vous avez entré n'est pas correcte !")
+            if type(e)== TypeError :
+                showerror(title=" Max iter Dépassé ", message=" Oops ! on vient de dépassé le max_iter donné !")
+            else:
+                showerror(title=" Formule érronée", message=" La fonction que vous avez entré n'est pas correcte !")
+
             return
         except SolverException:
-            showerror(title=" monotonie !", message=" La fonction que vous avez entré n'est pas monotonne \n f(a)f(b) > 0 !")
+            showerror(title=" monotonie !", message=" La fonction que vous avez entré n'est pas monotonne \n f(a)*f(b) > 0 !")
             return
         except Exception as ex:
             print(ex)

@@ -32,13 +32,16 @@ class NewtonPage(tk.Frame):
     def test1(self):
         formule=self.entryFomule.get()
         fx=formule
-        err=float(self.entryErr.get()) if self.entryErr.get() else 1e-15
+
+        err=float(self.entryErr.get()) if self.entryErr.get() else 1e-10
 
         try:
             f = lambda x: eval(fx)
+
             x0 = float(self.entryA.get())
 
-            if self.entryFomule_df:
+
+            if self.entryFomule_df.get():
                 dfx=self.entryFomule_df
                 equa = Newton(f=fx, df=dfx,x0=x0, err=err,max_iter=10)
 
@@ -54,7 +57,6 @@ class NewtonPage(tk.Frame):
            return
         except (TypeError ,SyntaxError ) as e:
             print(e)
-
             showerror(title=" Formule érronée", message=" La fonction que vous avez entré n'est pas correcte !")
             return
         except SolverException:

@@ -11,11 +11,8 @@ def drawGraph(a,b,fx,err,x,f,markers):
     plt.ylim(bottom=-2)
 
     data=[]
-    i=0
-    for x in markers :
-        if i<10:
-           data.append((x,f(x)))
-        i+=1
+    for x in markers[-10:] :
+       data.append((x,f(x)))
 
     clust_data = np.random.random((2, 18))
     collabel = ('xn','f(xn)')

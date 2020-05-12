@@ -8,6 +8,7 @@ style.use('seaborn-bright')
 from algos.Dichotomie import *
 from algos.Equa_Solver import *
 from .BasePage import drawGraph
+from convergence_rate import *
 
 
 # def drawGraphInWindow(t,f,self):
@@ -33,8 +34,11 @@ class DichotomiePage(tk.Frame):
             b = float(self.entryB.get())
             equa = Equa_Solver(f=fx, a=a, b=b, err=1e-15)
             dichoRes = Dichotomie.solve(equa)
+            dichoRes_final=dichoRes[-1]
+            dichoRes.pop()
+            cv=rate(dichoRes,dichoRes_final)[-1].__format__('.2f')
             t = np.linspace(a, b, 10,endpoint = False)
-            drawGraph(a,b,fx,1e-15,t, f, dichoRes)
+            drawGraph(a,b,fx,1e-15,t, f, dichoRes,cv=cv)
 
         except ValueError as verr:
            showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")

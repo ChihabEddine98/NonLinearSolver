@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0757fb08-ca9f-4064-85e7-6c38f630297f" name="Default" comment="add last 10 results to gui (firstly was 10 first )">
+    <list default="true" id="0757fb08-ca9f-4064-85e7-6c38f630297f" name="Default" comment="fix all bugs on NewtonPage.py [GUI]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/ui/views/BasePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui/views/BasePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/ui/views/NewtonPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui/views/NewtonPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/ui/views/CordesPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui/views/CordesPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/ui/views/DichotomiePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui/views/DichotomiePage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
       <workItem from="1589082492946" duration="7484000" />
       <workItem from="1589150616434" duration="491000" />
       <workItem from="1589155837055" duration="1218000" />
-      <workItem from="1589248029194" duration="5009000" />
+      <workItem from="1589248029194" duration="5665000" />
     </task>
     <task id="LOCAL-00001" summary="add info data to graph for DichotomiePage.py">
       <created>1589085936109</created>
@@ -140,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589249764500</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix all bugs on NewtonPage.py [GUI]">
+      <created>1589253281000</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589253281000</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,33 +162,34 @@
     <MESSAGE value="fix NewtonPage.py bug ! (in df_entry.get() )" />
     <MESSAGE value="fix add max_iter_dépassé_dialog  to gui" />
     <MESSAGE value="add last 10 results to gui (firstly was 10 first )" />
-    <option name="LAST_COMMIT_MESSAGE" value="add last 10 results to gui (firstly was 10 first )" />
+    <MESSAGE value="fix all bugs on NewtonPage.py [GUI]" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix all bugs on NewtonPage.py [GUI]" />
   </component>
   <component name="WindowStateProjectService">
     <state x="655" y="249" key="#Notifications" timestamp="1589082514072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="655" y="249" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1589082514072" />
-    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1589249763820">
+    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1589253280281">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589249763820" />
-    <state width="1493" height="253" key="GridCell.Tab.0.bottom" timestamp="1589253045115">
+    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589253280281" />
+    <state width="1493" height="138" key="GridCell.Tab.0.bottom" timestamp="1589253631818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589253045115" />
-    <state width="1493" height="253" key="GridCell.Tab.0.center" timestamp="1589253045115">
+    <state width="1493" height="138" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589253631818" />
+    <state width="1493" height="138" key="GridCell.Tab.0.center" timestamp="1589253631818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589253045115" />
-    <state width="1493" height="253" key="GridCell.Tab.0.left" timestamp="1589253045114">
+    <state width="1493" height="138" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589253631818" />
+    <state width="1493" height="138" key="GridCell.Tab.0.left" timestamp="1589253631818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589253045114" />
-    <state width="1493" height="253" key="GridCell.Tab.0.right" timestamp="1589253045115">
+    <state width="1493" height="138" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589253631818" />
+    <state width="1493" height="138" key="GridCell.Tab.0.right" timestamp="1589253631818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589253045115" />
+    <state width="1493" height="138" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589253631818" />
     <state width="1493" height="253" key="GridCell.Tab.1.bottom" timestamp="1589253045115">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -204,6 +212,6 @@
     <state x="231" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589082977586" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NonLinear_Equations$main.coverage" NAME="main Coverage Results" MODIFIED="1589253198702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NonLinear_Equations$main.coverage" NAME="main Coverage Results" MODIFIED="1589253800849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

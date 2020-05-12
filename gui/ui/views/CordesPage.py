@@ -14,6 +14,8 @@ import matplotlib.pyplot as plt
 from algos.Cordes import *
 from algos.Equa_Solver import *
 from .BasePage import drawGraph
+from convergence_rate import *
+
 
 
 # def drawGraphInWindow(t,f,self):
@@ -39,8 +41,11 @@ class CordesPage(tk.Frame):
             b = int(self.entryB.get())
             equa = Equa_Solver(f=fx, a=a, b=b, err=1e-15)
             cordesRes = Cordes.solve(equa)
+            cordesRes_final=cordesRes[-1]
+            cordesRes.pop()
+            cv=rate(cordesRes,cordesRes_final)[-1].__format__('.2f')
             t = np.linspace(a, b, 10)
-            drawGraph(a,b,fx,1e-15,t, f, cordesRes)
+            drawGraph(a,b,fx,1e-15,t, f, cordesRes,cv)
 
         except ValueError as verr:
            showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")
@@ -52,6 +57,7 @@ class CordesPage(tk.Frame):
             showerror(title=" monotonie !", message=" La fonction que vous avez entré n'est pas monotonne \n f(a)f(b) > 0 !")
             return
         except Exception as ex:
+            print(ex.with_traceback())
             showerror(title=" Oops error!", message=" Just be sure from your inputs.")
             return
 

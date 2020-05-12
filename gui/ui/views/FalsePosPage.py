@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 from algos.FalsePosition import *
 from algos.Equa_Solver import *
 from .BasePage import drawGraph
-
+from convergence_rate import *
 
 # def drawGraphInWindow(t,f,self):
 #     fig = Figure(figsize=(5, 5), dpi=100)
@@ -39,8 +39,11 @@ class FalsePosPage(tk.Frame):
             b = int(self.entryB.get())
             equa = Equa_Solver(f=fx, a=a, b=b, err=1e-15)
             cordesRes = FalsePosition.solve(equa)
+            cordesRes_final = cordesRes[-1]
+            cordesRes.pop()
+            cv = rate(cordesRes, cordesRes_final)[-1].__format__('.2f')
             t = np.linspace(a, b, 10)
-            drawGraph(a,b,fx,1e-15,t, f, cordesRes)
+            drawGraph(a,b,fx,1e-15,t, f, cordesRes,cv)
 
         except ValueError as verr:
            showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")

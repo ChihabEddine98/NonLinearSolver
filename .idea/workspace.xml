@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0757fb08-ca9f-4064-85e7-6c38f630297f" name="Default" comment="Fixed all known bugs for now [GUI]">
+    <list default="true" id="0757fb08-ca9f-4064-85e7-6c38f630297f" name="Default" comment="[Newton] Fix not function bug in DFx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/ui/views/NewtonPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui/views/NewtonPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/ui/views/CordesPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui/views/CordesPage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +84,7 @@
       <workItem from="1589248029194" duration="6413000" />
       <workItem from="1589506189676" duration="286000" />
       <workItem from="1590407472743" duration="318000" />
-      <workItem from="1591291135652" duration="1868000" />
+      <workItem from="1591291135652" duration="3601000" />
     </task>
     <task id="LOCAL-00001" summary="add info data to graph for DichotomiePage.py">
       <created>1589085936109</created>
@@ -156,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589253836949</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[Newton] Fix not function bug in DFx">
+      <created>1591293228596</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1591293228597</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,33 +180,34 @@
     <MESSAGE value="add last 10 results to gui (firstly was 10 first )" />
     <MESSAGE value="fix all bugs on NewtonPage.py [GUI]" />
     <MESSAGE value="Fixed all known bugs for now [GUI]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed all known bugs for now [GUI]" />
+    <MESSAGE value="[Newton] Fix not function bug in DFx" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Newton] Fix not function bug in DFx" />
   </component>
   <component name="WindowStateProjectService">
     <state x="655" y="249" key="#Notifications" timestamp="1589082514072">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="655" y="249" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1589082514072" />
-    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1589253836036">
+    <state x="325" y="0" key="CommitChangelistDialog2" timestamp="1591293227276">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589253836036" />
-    <state width="1493" height="151" key="GridCell.Tab.0.bottom" timestamp="1590407791407">
+    <state x="325" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1591293227276" />
+    <state width="1493" height="151" key="GridCell.Tab.0.bottom" timestamp="1591294770243">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590407791407" />
-    <state width="1493" height="151" key="GridCell.Tab.0.center" timestamp="1590407791407">
+    <state width="1493" height="151" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591294770243" />
+    <state width="1493" height="151" key="GridCell.Tab.0.center" timestamp="1591294770243">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590407791407" />
-    <state width="1493" height="151" key="GridCell.Tab.0.left" timestamp="1590407791407">
+    <state width="1493" height="151" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591294770243" />
+    <state width="1493" height="151" key="GridCell.Tab.0.left" timestamp="1591294770242">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590407791407" />
-    <state width="1493" height="151" key="GridCell.Tab.0.right" timestamp="1590407791407">
+    <state width="1493" height="151" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591294770242" />
+    <state width="1493" height="151" key="GridCell.Tab.0.right" timestamp="1591294770243">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="151" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590407791407" />
+    <state width="1493" height="151" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591294770243" />
     <state width="1493" height="253" key="GridCell.Tab.1.bottom" timestamp="1589254450994">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -222,6 +230,6 @@
     <state x="231" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589082977586" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NonLinear_Equations$main.coverage" NAME="main Coverage Results" MODIFIED="1591293102689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NonLinear_Equations$main.coverage" NAME="main Coverage Results" MODIFIED="1591294770235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

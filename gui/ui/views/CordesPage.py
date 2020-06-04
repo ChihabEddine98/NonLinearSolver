@@ -32,23 +32,30 @@ from convergence_rate import *
 class CordesPage(tk.Frame):
 
     def test1(self):
-        formule=self.entryFomule.get()
-        fx=formule
+        fx=self.entryFomule.get()
 
         try:
             f = lambda x: eval(fx)
-            a = int(self.entryA.get())
-            b = int(self.entryB.get())
-            equa = Equa_Solver(f=fx, a=a, b=b, err=1e-15)
+
+            a = float(self.entryA.get())
+            b = float(self.entryB.get())
+
+            equa = Cordes(f=fx, a=a, b=b, err=1e-15)
+
             cordesRes = Cordes.solve(equa)
+            print(f"cordesRes : {cordesRes}")
+
             cordesRes_final=cordesRes[-1]
             cordesRes.pop()
+            print(f"cordesRes : {cordesRes_final}")
+
             cv=rate(cordesRes,cordesRes_final)[-1].__format__('.2f')
             t = np.linspace(a, b, 10)
             drawGraph(a,b,fx,1e-15,t, f, cordesRes,cv)
 
         except ValueError as verr:
-           showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")
+           showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des nombres   !")
+           print(verr.with_traceback())
            return
         except (TypeError ,SyntaxError ) as e:
             showerror(title=" Formule érronée", message=" La fonction que vous avez entré n'est pas correcte !")
@@ -236,7 +243,7 @@ class CordesPage(tk.Frame):
         self.btnRetour.configure(pady="0")
         self.btnRetour.configure(relief="groove")
         self.btnRetour.configure(text='''Go Back''')
-        self.btnSolve.configure(command= lambda : self.test1())
+        self.btnSolve.configure(command=lambda: self.test1())
         self.btnRetour.configure(command=lambda: controller.show_frame("WelcomePage"))
 
 

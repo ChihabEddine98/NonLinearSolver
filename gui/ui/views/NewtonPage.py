@@ -43,7 +43,7 @@ class NewtonPage(tk.Frame):
 
 
             if self.entryFomule_df.get():
-                dfx=self.entryFomule_df
+                dfx=self.entryFomule_df.get()
                 equa = Newton(f=fx, df=dfx,x0=x0, err=err,max_iter=10)
 
             else:

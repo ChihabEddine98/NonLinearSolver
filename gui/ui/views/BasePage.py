@@ -27,9 +27,13 @@ def drawGraph(a,b,fx,err,x,f,markers,cv):
 
 
     props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
-    cv= f'taux de convergence : {cv} \nf(x)=0 for x={x}'
+    if cv:
+        cv= f'taux de convergence : {cv} \nf(x)=0 for x={x}'
+    else:
+        cv=f'f(x)=0 for x={x}'
+
     x_begin=x_min
-    y_begin=y_avant_max
+    y_begin=y_avant_max+1
     plt.text(x_begin,y_begin, cv, horizontalalignment='center',
              verticalalignment='center', fontsize=12, color='k',bbox=props)
 
@@ -43,17 +47,20 @@ def drawGraph(a,b,fx,err,x,f,markers,cv):
 
     plt.xticks(markers)
 
+    i=1
     for x in markers:
         plt.scatter(x, f(x), marker='o',linestyle='--')
-        if f(x)>0 :
-            yMax=1
-            yMin=0.8
+
+        if i>= len(markers)/20 :
+            plt.xlim(x-0.4,x+0.4)
+            if f(x)>0:
+                plt.axvline(x=x,color='b',linestyle='-')
+            else:
+                plt.axvline(x=x,color='r',linestyle='-')
         else:
-            yMax=0.8
-            yMin=0.4
+            plt.axvline(x=x, color='k', linestyle='--')
 
-
-        plt.axvline(x=x,color='k',linestyle='--')
+        i+=1
         try:
             plt.pause(3)
         except tk.TclError:

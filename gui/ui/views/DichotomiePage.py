@@ -36,7 +36,7 @@ class DichotomiePage(tk.Frame):
             dichoRes = Dichotomie.solve(equa)
             dichoRes_final=dichoRes[-1]
             dichoRes.pop()
-            cv=rate(dichoRes,dichoRes_final)[-1].__format__('.2f')
+            cv=None
             t = np.linspace(a, b, 10,endpoint = False)
             drawGraph(a,b,fx,1e-15,t, f, dichoRes,cv=cv)
 

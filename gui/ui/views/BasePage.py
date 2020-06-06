@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def drawGraph(a,b,fx,err,x,f,markers,cv):
+    cst=cv
     fig, ax = plt.subplots(2,1)
     fig.set_size_inches(9, 8)
     x_min=x[-4]
@@ -51,7 +52,7 @@ def drawGraph(a,b,fx,err,x,f,markers,cv):
     for x in markers:
         plt.scatter(x, f(x), marker='o',linestyle='--')
 
-        if i>= len(markers)/20 :
+        if i>= len(markers)/20 and not cst:
             plt.xlim(x-0.4,x+0.4)
             if f(x)>0:
                 plt.axvline(x=x,color='b',linestyle='-')

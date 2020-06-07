@@ -38,12 +38,14 @@ class FalsePosPage(tk.Frame):
             a = int(self.entryA.get())
             b = int(self.entryB.get())
             equa = Equa_Solver(f=fx, a=a, b=b, err=1e-15)
-            cordesRes = FalsePosition.solve(equa)
-            cordesRes_final = cordesRes[-1]
-            cordesRes.pop()
-            cv = rate(cordesRes, cordesRes_final)[-1].__format__('.2f')
+            falsePosRes = FalsePosition.solve(equa)
+            res=[r for r in falsePosRes]
+
+            cordesRes_final = falsePosRes[-1]
+            falsePosRes.pop()
+            cv = rate(falsePosRes, cordesRes_final)[-1].__format__('.2f')
             t = np.linspace(a, b, 10)
-            drawGraph(a,b,fx,1e-15,t, f, cordesRes,cv)
+            drawGraph(a,b,fx,1e-15,t, f, res,cv)
 
         except ValueError as verr:
            showerror(title=" Intervalle érroné", message=" Les bornes d'intervalle doivent etre des entiers   !")

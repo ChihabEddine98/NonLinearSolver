@@ -49,15 +49,20 @@ def drawGraph(a,b,fx,err,x,f,markers,cv):
     plt.xticks(markers)
 
     i=1
+    j = 0
+
     for x in markers:
         plt.scatter(x, f(x), marker='o',linestyle='--')
 
         if i>= len(markers)/20 and not cst:
             plt.xlim(x-0.4,x+0.4)
-            if f(x)>0:
-                plt.axvline(x=x,color='b',linestyle='-')
+            j+=1
+            if markers[-1]>x:
+                plt.plot((a, x), (0,0), 'r-',linewidth=j%5+1)
+                # plt.axhline(y=0,color='b',linestyle='-')
             else:
-                plt.axvline(x=x,color='r',linestyle='-')
+                plt.plot((x, b), (0,0), 'b-',linewidth=j%5+1)
+                # plt.axhline(y=0,color='r',linestyle='-')
         else:
             plt.axvline(x=x, color='k', linestyle='--')
 

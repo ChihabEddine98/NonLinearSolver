@@ -21,3 +21,12 @@ def print_rate(x_list):
     r=rate(x_list, x_final)
     q = ['%.2f' % q_ for q_ in r]
     print("Convergence rate : ",q[-1])
+
+def get_rate(x_list):
+    x_final = x_list[-1]
+    # remove doublon,susceptible de faire crasher le rate
+    x_list = list(dict.fromkeys(x_list))
+    x_list.pop()
+    r=rate(x_list, x_final)
+    q = ['%.2f' % q_ for q_ in r]
+    return q[-1]

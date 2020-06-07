@@ -52,11 +52,8 @@ class NewtonPage(tk.Frame):
             newtonRes = Newton.solve(equa)
             res=[r for r in newtonRes]
 
-            newtonRes_final=newtonRes[-1]
-            newtonRes.pop()
-
             t = np.linspace(x0, 3, 10)
-            cv=rate(newtonRes,newtonRes_final)[-1].__format__('.2f')
+            cv=get_rate(newtonRes)
             drawGraph(x0,x0,fx,err,t, f, res,cv=cv)
 
 

@@ -45,13 +45,9 @@ class CordesPage(tk.Frame):
             cordesRes = Cordes.solve(equa)
             res=[r for r in cordesRes]
 
-            print(f"cordesRes : {cordesRes}")
+            # cv=rate(cordesRes,cordesRes_final)[-1].__format__('.2f')
+            cv=get_rate(cordesRes)
 
-            cordesRes_final=cordesRes[-1]
-            cordesRes.pop()
-            print(f"cordesRes : {cordesRes_final}")
-
-            cv=rate(cordesRes,cordesRes_final)[-1].__format__('.2f')
             t = np.linspace(a, b, 10)
             drawGraph(a,b,fx,1e-15,t, f, res,cv)
 

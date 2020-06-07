@@ -35,15 +35,14 @@ class FalsePosPage(tk.Frame):
 
         try:
             f = lambda x: eval(fx)
-            a = int(self.entryA.get())
-            b = int(self.entryB.get())
-            equa = Equa_Solver(f=fx, a=a, b=b, err=1e-15)
+            a = float(self.entryA.get())
+            b = float(self.entryB.get())
+            equa = FalsePosition(f=fx, a=a, b=b, err=1e-15)
             falsePosRes = FalsePosition.solve(equa)
             res=[r for r in falsePosRes]
 
             cordesRes_final = falsePosRes[-1]
-            falsePosRes.pop()
-            cv = rate(falsePosRes, cordesRes_final)[-1].__format__('.2f')
+            cv = get_rate(falsePosRes)
             t = np.linspace(a, b, 10)
             drawGraph(a,b,fx,1e-15,t, f, res,cv)
 

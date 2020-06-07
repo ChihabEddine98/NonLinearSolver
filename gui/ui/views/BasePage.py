@@ -39,7 +39,7 @@ def drawGraph(a,b,fx,err,x,f,markers,cv):
              verticalalignment='center', fontsize=12, color='k',bbox=props)
 
     if a!=b:
-        info=f' f(x) = {fx} \nerror ={err} \n[{int(a)},{int(b)}]'
+        info=f' f(x) = {fx} \nerror ={err} \n[{float(a)},{float(b)}]'
     else:
         info=f' f(x) = {fx} \nerror ={err} \n Xo = {a}'
 

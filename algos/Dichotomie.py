@@ -12,6 +12,30 @@ from ast import literal_eval
     pour une fonction f monotonne (croissante ou décroissante)
     sur un intervale [a,b] le pseudo code de cette fonction
     est disponible sur le ReadMe du dépot
+    
+    # Méthode Dichotomie 
+
+    Début
+    debut <- a
+    fin   <- b
+
+    TantQue ( fin-debut > err )
+    {
+        millieu = (debut + fin ) / 2
+
+        Si  ( f(millieu) >  0 )
+        {
+            fin <- millieu
+        } 
+        Sinon 
+        {
+            debut <- millieu
+        }
+    }
+    retourner (millieu) 
+    Fin
+    ```
+    
 """
 
 class Dichotomie(Equa_Solver):

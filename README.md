@@ -42,26 +42,5 @@ parametres à passer :
 			a,b : les bornes de l'intervalle [a,b]
 			err : l'erreur pour le calcul approché de la solution
 ------------------------------------------------------------------------
-# Méthode Dichotomie 
 
-Début
-debut <- a
-fin   <- b
-
-TantQue ( fin-debut > err )
-{
-    millieu = (debut + fin ) / 2
-    
-    Si  ( f(millieu) >  0 )
-    {
-	    fin <- millieu
-    } 
-    Sinon 
-    {
-        debut <- millieu
-    }
-}
-retourner (millieu) 
-Fin
-```
 

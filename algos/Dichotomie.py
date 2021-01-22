@@ -13,6 +13,20 @@ from ast import literal_eval
     sur un intervale [a,b] le pseudo code de cette fonction
     est disponible sur le ReadMe du dépot
     
+    
+**res_equa_dct (f , a , b , err) :**
+-
+Cette fonction résout l’équation f(x)=0 pour une fonction f monotone (croissante ou décroissante)sur un intervalle [a,b] le pseudo code de cette fonction
+est en dessous : 
+```
+------------------------------------------------------------------------
+parametres à passer :
+			f   : une fonction monotone 
+			a,b : les bornes de l'intervalle [a,b]
+			err : l'erreur pour le calcul approché de la solution
+------------------------------------------------------------------------
+
+
     # Méthode Dichotomie 
 
     Début

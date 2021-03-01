@@ -31,4 +31,6 @@ pour pouvoir lancer un test ( pour l'instant les fonctions pour tester cette mé
 déjà fournies  dans le fichier **`tests.py`**  ) il faut donc lancer la commande : 
 >**python3 main.py**
 
-
+TODO --- 
+1)Screenshots
+2)English version 

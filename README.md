@@ -1,6 +1,6 @@
 # Non Linear Equations
 ## Méthode de Newton
- Tout d'abord,il faut installer la bibliotheque [sympy](https://www.sympy.org/en/index.html "sympy doc") qu'on utilisera plus tard.Assurez-vous aussi de travailler sous une machine Linux et de Python 3.
+ Tout d'abord ,il faut installer la bibliotheque [sympy](https://www.sympy.org/en/index.html "sympy doc") qu'on utilisera plus tard.Assurez-vous aussi de travailler sous une machine Linux et de Python 3.
  > pip install sympy 
  
  Les fonctions en relation avec cette méthode se trouvent dans le fichier [newton.py](newton.py) et les tests unitaires se font dans le fichier [test_newton.py](test_newton.py).

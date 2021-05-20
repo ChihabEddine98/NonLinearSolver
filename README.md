@@ -36,3 +36,4 @@ TODO ---
 2)English version 
 3)Doc
 4)SGD
+5) ADABOOST

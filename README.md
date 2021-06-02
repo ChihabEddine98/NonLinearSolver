@@ -12,7 +12,7 @@
  	* La fonction classique, qui prend en argument:
 	  * f : une fonction f 
 	  * Df : la dérivée de f
-	  * x0  : une valeur approchée initiale
+	  * x_0  : une valeur approchée initiale
 	  * epsilon : le seuil de tolérance 
 	  * max_iter : le nombre maximum d'itérations permis
 	 

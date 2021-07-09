@@ -37,3 +37,4 @@ TODO ---
 3)Doc
 4)SGD
 5) ADABOOST SGD
+6) MACOS version

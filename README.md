@@ -38,4 +38,4 @@ TODO ---
 4)SGD
 5) ADABOOST SGD
 6) MACOS version
-7) del idea
+7) del .idea
